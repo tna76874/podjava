@@ -24,10 +24,14 @@ function add_podman_ppa_and_podman() {
     sudo apt -y install podman &> /dev/null
 }
 
-function ensure_executeable() {
-    executablepath="/usr/local/bin/podjava"
-    echo 'podman run -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp docker.io/library/openjdk:18 $@' | sudo tee $executablepath > /dev/null
-    sudo chmod +x $executablepath
+function ensure_executeables() {
+    executablepathjava="/usr/local/bin/podjava"
+    echo 'podman run -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp docker.io/library/openjdk:18 $@' | sudo tee $executablepathjava > /dev/null
+    sudo chmod +x $executablepathjava
+
+    executablepathjupyter="/usr/local/bin/podpod"
+    echo 'podman run -it -v "$PWD":/home/jovyan/work -w /home/jovyan/work -p 127.0.0.1:8888:8888  ghcr.io/tna76874/schoolnotebookjava:stable jupyter notebook --NotebookApp.default_url=/lab/ --ip=0.0.0.0 --port=8888 --NotebookApp.token=""' | sudo tee $executablepathjupyter > /dev/null
+    sudo chmod +x $executablepathjupyter
 }
 
-check_for_podman || add_podman_ppa_and_podman && ensure_executeable
+check_for_podman || add_podman_ppa_and_podman && ensure_executeables
