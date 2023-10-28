@@ -30,7 +30,7 @@ function ensure_executeables() {
     sudo chmod +x $executablepathjava
 
     executablepathjupyter="/usr/local/bin/podpod"
-    echo 'podman pull ghcr.io/tna76874/schoolnotebookjava:stable && podman run -it -v "$PWD":/home/jovyan/work -w /home/jovyan -p 127.0.0.1:8888:8888  ghcr.io/tna76874/schoolnotebookjava:stable jupyter notebook --NotebookApp.default_url=/lab/ --ip=0.0.0.0 --port=8888 --NotebookApp.token=""' | sudo tee $executablepathjupyter > /dev/null
+    echo 'xdg-open  http://localhost:8888/lab & podman pull ghcr.io/tna76874/schoolnotebookjava:stable && podman run -it -v "$PWD":/home/jovyan/work -w /home/jovyan -p 127.0.0.1:8888:8888  ghcr.io/tna76874/schoolnotebookjava:stable jupyter notebook --NotebookApp.default_url=/lab/ --ip=0.0.0.0 --port=8888 --NotebookApp.token=""' | sudo tee $executablepathjupyter > /dev/null
     sudo chmod +x $executablepathjupyter
 }
 
