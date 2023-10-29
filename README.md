@@ -44,26 +44,24 @@ STRG+C in the black terminal to stop server.
 
 ## Examples
 
-Open a **terminal**.
+![Open a **terminal**.](doc/01.svg)
 
-![01](doc/01.svg)
 
-Now, start a **jshell** inside the terminal.
 
-![01](doc/02.svg)
+![Now, start a **jshell** inside the terminal.](doc/02.svg)
 
-Create a new **text file**.
 
-![01](doc/03.svg)
 
-**Rename** (right click) the text file to `hello.jsh` and **fill** the file **with content**.
+![Create a new **text file**.](doc/03.svg)
 
-![01](doc/04.svg)
 
-Switch back to the **jshell** session inside the terminal. **Run** the jshell file.
 
-![01](doc/05.svg)
+![**Rename** (right click) the text file to `hello.jsh` and **fill** the file **with content**.](doc/04.svg)
 
-**Save** the file to your documents by **downloading** it.
 
-![01](doc/06.svg)
+
+![Switch back to the **jshell** session inside the terminal. **Run** the jshell file.](doc/05.svg)
+
+
+
+![**Save** the file to your documents by **downloading** it.](doc/06.svg)
