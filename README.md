@@ -50,6 +50,12 @@ Double click `startjupyter.bat` to start the jupyter server and open in browser:
 
 STRG+C in the black terminal to stop server.
 
+## Contributions
+
+Contributions to this project are appreciated! Before diving in, please review the "to-dos" listed on the issue page:
+
+[https://github.com/tna76874/podjava/issues](https://github.com/tna76874/podjava/issues)
+
 ## Examples
 
 ![Open a **terminal**.](doc/01.svg)
