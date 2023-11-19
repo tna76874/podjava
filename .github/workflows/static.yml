@@ -31,13 +31,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
+      - name: Execute compile.sh and save PDF
+        run: |
+          ./doc/compile.sh
+          mv ./doc/podjava.pdf $GITHUB_WORKSPACE/podjava.pdf
+        shell: bash
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
-          # Upload entire repository
-          path: '.'
+          name: compiled-pdf
+          path: podjava.pdf
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
