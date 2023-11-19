@@ -38,14 +38,13 @@ jobs:
       - name: Execute compile.sh and save PDF
         run: |
           ./doc/compile.sh
-          mv ./doc/podjava.pdf $GITHUB_WORKSPACE/podjava.pdf
+          mv ./doc/podjava.pdf $GITHUB_WORKSPACE/doc/podjava.pdf
         shell: bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: compiled-pdf
-          path: podjava.pdf
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
