@@ -39,8 +39,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-fonts-extra librsvg2-bin
-          pandoc README.md -V geometry:margin=1.5cm --variable colorlinks=true --variable urlcolor=blue -o ./podjava.pdf
-          mv ./podjava.pdf $GITHUB_WORKSPACE/podjava.pdf || :
+          bash ./doc/compile.sh
+          mv ./doc/podjava.pdf $GITHUB_WORKSPACE/podjava.pdf || :
         shell: bash
 
       - name: Upload artifact

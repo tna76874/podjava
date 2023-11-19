@@ -4,7 +4,7 @@
 
 [https://github.com/tna76874/podjava](https://github.com/tna76874/podjava)
 
-[PDF-Documentation](https://raw.githubusercontent.com/tna76874/podjava/main/doc/podjava.pdf)
+[PDF-Documentation](https://tna76874.github.io/podjava/podjava.pdf)
 
 ## Usage without installation
 
