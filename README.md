@@ -1,12 +1,12 @@
-# Containerized Multiplatform Java/Python
-
-*Lukas Meyer-Hilberg*
+# Containerized multiplatform Java-Jupyter-Server
 
 [https://github.com/tna76874/podjava](https://github.com/tna76874/podjava)
 
 [PDF-Documentation](https://tna76874.github.io/podjava/podjava.pdf)
 
 ## Usage without installation
+
+[mybinder.org](https://mybinder.org/) offers the opportunity to start jupyter-container. However: This depends on the temporary resources of mybinder and sometimes instances take quite some time to startup. After a few minutes without activity mybinder stops the container (beware of work that might get lost).
 
 [https://url.hilberg.eu/java](https://url.hilberg.eu/java)
 
@@ -18,19 +18,7 @@ Install podman and deploy scripts.
 curl -sL https://raw.githubusercontent.com/tna76874/podjava/main/install.sh | bash
 ```
 
-#### podjava
-
-containerized java
-
-```bash
-podjava java -version
-```
-
-#### podpod
-
-Containerized jupyter server with java
-
-Startup
+Containerized jupyter server with java startup:
 
 ```bash
 podpod
@@ -56,7 +44,7 @@ Contributions to this project are appreciated! Before diving in, please review t
 
 [https://github.com/tna76874/podjava/issues](https://github.com/tna76874/podjava/issues)
 
-## Examples
+## Example: Execute jshell scripts
 
 ![Open a **terminal**.](doc/01.svg)
 

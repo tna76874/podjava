@@ -9,7 +9,7 @@ HEADER_CODE=$(cat << 'EOF'
 header-includes: |
     \\usepackage{fancyhdr}
     \\pagestyle{fancy}
-    \\fancyfoot[LO,LE]{Hilberg}
+    \\fancyfoot[LO,LE]{Lukas Meyer-Hilberg}
     \\fancyfoot[CO,CE]{\\thepage}
     \\fancyfoot[LE,RO]{\\today}
 ...
