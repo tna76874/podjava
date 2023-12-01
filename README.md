@@ -38,6 +38,18 @@ Double click `startjupyter.bat` to start the jupyter server and open in browser:
 
 STRG+C in the black terminal to stop server.
 
+## XAMPP
+
+To extend this image with XAMPP, just download and start this image:
+
+[https://raw.githubusercontent.com/tna76874/podman-xampp/main/startxampp.bat](https://raw.githubusercontent.com/tna76874/podman-xampp/main/startxampp.bat)
+
+For Linux, install and start the image with `podxampp`:
+
+```
+curl -sL https://raw.githubusercontent.com/tna76874/podman-xampp/main/install.sh | bash
+```
+
 ## Contributions
 
 Contributions to this project are appreciated! Before diving in, please review the "to-dos" listed on the issue page:
